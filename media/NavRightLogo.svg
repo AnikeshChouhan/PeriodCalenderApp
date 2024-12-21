@@ -1,0 +1,8 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="5.44901" cy="3.88296" r="2.79344" stroke="#181725" stroke-width="1.9" stroke-linejoin="bevel"/>
+<rect x="0.35" y="2.94784" width="2.94949" height="1.87051" rx="0.935257" fill="#181725" stroke="#181725" stroke-width="0.3" stroke-linejoin="bevel"/>
+<circle cx="10.4321" cy="12.117" r="2.79344" transform="rotate(-180 10.4321 12.117)" stroke="#181725" stroke-width="1.9" stroke-linejoin="bevel"/>
+<rect x="8.22598" y="2.94784" width="6.93798" height="1.87051" rx="0.935257" fill="#181725" stroke="#181725" stroke-width="0.3" stroke-linejoin="bevel"/>
+<rect x="7.6561" y="13.0531" width="6.9413" height="1.87051" rx="0.935257" transform="rotate(-180 7.6561 13.0531)" fill="#181725" stroke="#181725" stroke-width="0.3" stroke-linejoin="bevel"/>
+<rect x="15.4498" y="13.0531" width="2.53856" height="1.87051" rx="0.935257" transform="rotate(-180 15.4498 13.0531)" fill="#181725" stroke="#181725" stroke-width="0.3" stroke-linejoin="bevel"/>
+</svg>
