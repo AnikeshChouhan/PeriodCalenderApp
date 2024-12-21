@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Collecter from "./components02/Collecter/Collecter";
-import Collecter2 from "./components/Collecter2/Collecter2";
-import { ThemeContext } from "./components02/Context/ThemeContext";
+import Collecter from "./components/HomePage/Collecter/Collecter";
+import Collecter2 from "./components/ShoppingPage/Collecter2/Collecter2";
+import { ThemeContext } from "./components/HomePage/Context/ThemeContext";
 import Collecter3 from "./components/ProductDetail/Collecter3/COllecter3";
 
 const App = () => {
