@@ -8,14 +8,14 @@ const CycleCard = ({ date, label, theme }) => (
     }`}
   >
     <span
-      className={`font-['Poppins'] ${
+      className={`font-poppin font-medium text-base ${
         theme === "light" ? "text-white" : "text-[#8B19A4]"
       }  whitespace-nowrap text-base`}
     >
       {date}
     </span>
     <span
-      className={`font-['Poppins'] ${
+      className={`font-poppin font-medium text-xs ${
         theme === "light" ? "text-white" : "text-[#8B19A4]"
       }  whitespace-nowrap text-xs`}
     >
@@ -34,19 +34,17 @@ const CycleSection = () => {
 
   return (
     <div>
-      <div className=" md:px-5">
-        {/* Header with exact font styling */}
+      <div className=" md:px-5 mb-7">
         <p
-          className={` z-10 p-5 pl-3 inline-block whitespace-nowrap font-poppin font-medium text-[14px] leading-[15px] ${
+          className={`mb-[-8px] p-5 pl-3 inline-block whitespace-nowrap font-poppin font-medium text-[14px] leading-[15px] ${
             theme === "light" ? " text-white" : "text-black"
           }`}
         >
           Cycle Phase
         </p>
 
-        {/* Cards container with exact spacing */}
         <div
-          className="text-center flex justify-between items-center px-3 gap-5 
+          className=" text-center flex justify-between items-center px-3 gap-5 
           extraSmall:px-2 extraSmall:gap-2 extraSmall:text-sm moreExtraSmall:flex-wrap"
         >
           {cycles.map((cycle, index) => (

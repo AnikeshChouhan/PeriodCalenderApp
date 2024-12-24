@@ -3,25 +3,25 @@ import React, { useContext } from "react";
 const Footer = () => {
   // const { theme } = useContext(ThemeContext);
   return (
-    <div className=" px-3 flex justify-between items-center bg-white rounded-xl m-2">
+    <div className=" px-3 py-2 flex justify-between items-center bg-white rounded-xl m-2 mb-8">
       <div class="text-[#8B19A4] font-montserrat">
         <div className="relative">
           <img
-            className="absolute translate-x-28 -translate-y-3 "
+            className="absolute translate-x-32 -translate-y-3 "
             src="../../../media/Ellipse 72.svg"
             alt=""
           />
           {/* <p className=" absolute translate-x-32 w-2 h-2 bg-[#8B19A4] rounded-full border-2 border-[#8B19A4] flex "></p> */}
         </div>
-        <span className="text-[20px] font-normal italic">Ensuring That </span>
+        <span className="text-[22px] font-normal italic">Ensuring That </span>
         <br />
-        <span className="text-[20px] font-bold italic">
+        <span className="text-[22px] font-bold italic">
           Eat A{" "}
-          <span className=" text-[20px] font-bold italic">Balance Diet</span>
+          <span className=" text-[22px] font-bold italic">Balance Diet</span>
         </span>
         <div className="relative">
           <img
-            className="absolute translate-x-12 sm:translate-x-44"
+            className="absolute translate-x-12 translate-y-1 sm:translate-x-44"
             src="../../../media/Ellipse 72 (1).svg"
             alt=""
           />

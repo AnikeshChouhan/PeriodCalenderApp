@@ -1,5 +1,5 @@
 import React from "react";
-import { Calendar, ShoppingCart, Heart, Settings } from "lucide-react";
+import { CalendarDays, ShoppingCart, Heart, Settings } from "lucide-react";
 import { useContext } from "react";
 import { ThemeContext } from "../Context/ThemeContext";
 
@@ -10,17 +10,18 @@ const NavigationItem = ({ icon: Icon, label, theme }) => (
     >
       <Icon
         className={`w-5 h-5 ${
-          theme === "light" && label !== "Today"
-            ? "text-white"
-            : label === "Today"
-            ? "text-white"
-            : "  "
-        }`}
+          theme === "light" || label === "Today" ? "text-white" : "text-black"
+        } 
+        `}
       />
     </div>
     <p
-      className={`text-xs mt-1 font-normal ${
-        theme === "light" ? "text-[#888888]" : ""
+      className={`font-poppin font-normal text-xs  ${
+        theme === "light" && label === "Today"
+          ? "text-white"
+          : label !== "Today"
+          ? "text-[#78787f]"
+          : "text-black"
       }`}
     >
       {label}
@@ -36,7 +37,7 @@ const LastFooter = () => {
         theme === "light" ? "bg-[#202020]" : "bg-[#EFEFFE]"
       }`}
     >
-      <NavigationItem icon={Calendar} label="Today" theme={theme} />
+      <NavigationItem icon={CalendarDays} label="Today" theme={theme} />
       <NavigationItem icon={ShoppingCart} label="Shop" theme={theme} />
       <NavigationItem icon={Heart} label="Safe Care" theme={theme} />
       <NavigationItem icon={Settings} label="Setting" theme={theme} />
