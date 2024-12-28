@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 const Footer = () => {
   // const { theme } = useContext(ThemeContext);
   return (
-    <div className=" px-3 py-2 flex justify-between items-center bg-white rounded-xl m-2 mb-8">
+    <div className=" mx-h-screen mb-24 px-3 py-2 flex justify-between items-center bg-white rounded-xl m-2 ">
       <div class="text-[#8B19A4] font-montserrat">
         <div className="relative">
           <img

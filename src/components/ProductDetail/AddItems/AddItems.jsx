@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import { Star } from "lucide-react";
 
 const AddItems = () => {
@@ -91,9 +91,11 @@ const AddItems = () => {
       </div>
 
       <div className=" flex flex-col gap-3">
-        <button className="w-full py-3 bg-[#B436CF] font-poppin font-semibold text-sm text-white rounded-2xl hover:bg-[#8B19A4] transition-colors">
-          Add to Cart
-        </button>
+        <Link to="/AddCart">
+          <button className="w-full py-3 bg-[#B436CF] font-poppin font-semibold text-sm text-white rounded-2xl hover:bg-[#8B19A4] transition-colors">
+            Add to Cart
+          </button>
+        </Link>
         <button className="w-full py-3 bg-[#B436CF] font-poppin font-semibold text-sm text-white rounded-2xl hover:bg-[#8B19A4] transition-colors">
           Buy It Now
         </button>

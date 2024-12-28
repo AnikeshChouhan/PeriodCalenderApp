@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-const AddSub = ({ onBack }) => {
+const AddSub = () => {
   const [items, setItems] = useState([
     {
       id: 1,
@@ -42,10 +42,7 @@ const AddSub = ({ onBack }) => {
       <div className=" p-2 flex items-center gap-28 shadow-sm bg-[#EFEFFE]">
         <Link to="/products">
           {" "}
-          <button
-            onClick={onBack}
-            className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
-          >
+          <button className="p-2 rounded-lg hover:bg-gray-100 transition-colors">
             <img src="../../../../media/ArrowIcon.svg" alt="" />
           </button>
         </Link>
@@ -73,7 +70,7 @@ const AddSub = ({ onBack }) => {
                   >
                     <img src="../../../../media/subtractionIcon.svg" alt="" />
                   </button>
-                  <span className="font-poppin text-sm font-medium tet">
+                  <span className="font-poppin text-sm font-medium">
                     {item.quantity}
                   </span>
                   <button
@@ -84,7 +81,7 @@ const AddSub = ({ onBack }) => {
                   </button>
                 </div>
               </div>
-              <div className="flex flex-col items-end gap-4">
+              <div className="flex flex-col justify-center  items-center mt-8">
                 <button
                   className="absolute top-2 right-2 p-1 rounded-md hover:bg-gray-100 transition-colors"
                   onClick={() => handleRemoveItem(item.id)}

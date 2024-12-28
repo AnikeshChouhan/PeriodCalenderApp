@@ -15,6 +15,7 @@ export default {
         DarkGro: ["Darker Grotesque", "serif"],
         workSans: ["Work Sans", "serif"],
         Montserat: ["Montserrat", "serif"],
+        urbanist: ["urbanist", "serif"],
       },
       screens: {
         extraSmall: { min: "290px", max: "360px" }, // Custom range for your media query

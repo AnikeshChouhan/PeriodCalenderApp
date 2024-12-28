@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Moon, Sun } from "lucide-react";
 import { ThemeContext } from "../Context/ThemeContext";
+import { getLocalStorageData } from "../../../Storage/LocalStorage";
 
 const svgImgs = () => {
   const { theme } = useContext(ThemeContext);
@@ -25,6 +26,16 @@ const svgImgs = () => {
 
 const Nav = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const localdata = getLocalStorageData("users");
+
+  const data = localdata.map((value) => {
+    if (value.fullName === " ") {
+      const arr = value.fullName.split(" ");
+      return arr[0];
+    } else {
+      return "Olivai!";
+    }
+  });
 
   return (
     <nav
@@ -44,7 +55,7 @@ const Nav = () => {
               theme === "light" ? "text-white" : "text-black"
             } `}
           >
-            Hello, Olivai!
+            Hello,{data}
           </span>
         </div>
         <div className="flex items-center justify-cente">

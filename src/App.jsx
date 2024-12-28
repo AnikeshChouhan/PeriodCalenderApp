@@ -7,8 +7,13 @@ import { ThemeContext } from "./components/HomePage/Context/ThemeContext";
 import Collecter3 from "./components/ProductDetail/Collecter3/COllecter3";
 import Collecter4 from "./components/MyGoal/Collecter4";
 import Collecter5 from "./components/AddCart/Collector5/Collecter5";
-
+import WelcomePage from "./components/LoginPage/WelcomePage";
+import SignUpPage from "./components/LoginPage/SignUpPage";
+import LoginPage from "./components/LoginPage/LoginPage";
+import { ProtectedRoute } from "./components/LoginPage/LoginPage";
 const App = () => {
+  // localStorage.clear();
+
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -19,11 +24,28 @@ const App = () => {
     >
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Collecter />} />
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <Collecter />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/Products" element={<Collecter2 />} />
           <Route path="/ProductDetails" element={<Collecter3 />} />
-          <Route path="/MyGoal" element={<Collecter4 />} />
+          <Route
+            path="/MyGoal"
+            element={
+              <ProtectedRoute>
+                <Collecter4 />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/AddCart" element={<Collecter5 />} />
+          <Route path="/WelcomePage" element={<WelcomePage />} />
+          <Route path="/SignUp" element={<SignUpPage />}></Route>
+          <Route path="/Login" element={<LoginPage />} />{" "}
         </Routes>
       </BrowserRouter>
     </div>

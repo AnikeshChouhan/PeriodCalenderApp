@@ -11,7 +11,11 @@ import Nav from "../Navbar/Navbar";
 const Collecter = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className={`${theme === "light" ? "bg-[#202020]" : "bg-[#EFEFFE]"}`}>
+    <div
+      className={` overflow-x-auto ${
+        theme === "light" ? "bg-[#202020]" : "bg-[#EFEFFE]"
+      }`}
+    >
       <Nav />
       {theme === "light" ? <HeroSection2 /> : <HeroSection />}
       <CycleSection />

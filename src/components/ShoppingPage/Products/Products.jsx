@@ -70,7 +70,7 @@ const ProductCard = ({ product }) => {
 
       {/* Button */}
       <div className="bg-[#8B19A4] w-full h-[20%] flex justify-center items-center rounded-b-2xl">
-        <Link to="/AddCart">
+        <Link to="/ProductDetails">
           {" "}
           <button className="flex justify-center items-center gap-2">
             <CartIcn />
